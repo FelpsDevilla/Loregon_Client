@@ -1,3 +1,36 @@
-.card{
-    max-width: 15vw;
+mat-card-header {
+  margin: 1px;
+}
+
+mat-card-title p {
+  height: 4vh;
+  margin: 1vh;
+  display: -webkit-box;
+  /* -webkit-line-clamp: 2;  Número máximo de linhas
+          line-clamp: 2;
+  -webkit-box-orient: vertical; */
+  overflow: hidden;
+}
+
+mat-card {
+  width: 30vh;
+  height: max-content;
+  margin: 1vh 1vh;
+}
+
+img {
+  height: 30vh;
+}
+
+mat-card-actions {
+  height: max-content;
+  padding: 0;
+  flex-grow: 1;
+}
+
+button {
+  color: var(--mat-sys-on-tertiary-container);
+  background-color: var(--mat-sys-tertiary-container);
+  flex-grow: 1;
+  margin: 0.5vh;
 }

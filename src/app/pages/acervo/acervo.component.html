@@ -1,1 +1,5 @@
-<app-card></app-card>
+<div class="acervo-container">
+    <div *ngFor="let item of itens">
+      <app-card [acervoItem]="item"></app-card>
+    </div>
+  </div>

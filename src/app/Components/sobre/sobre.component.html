@@ -1,0 +1,69 @@
+<div class="teste">
+    <h1 class="titulo">Metadados</h1>
+    <div class="container-sobre">
+      <div class="content">
+        <div class="thumbnail">
+          <img
+            class="zoomable"
+            id="zoom-container"
+            src="{{ data.acervoItem.thumbnailUrl }}"
+            alt="">
+        </div>
+  
+        <div class="metadados">
+          <div class="metadados-content">
+            <ul>
+              <li>
+                <h4>Cidade</h4>
+                <p>{{ data.acervoItem.city }}</p>
+              </li>
+              <li>
+                <h4>Nome do objeto</h4>
+                <p>{{ data.acervoItem.objectName }}</p>
+              </li>
+              <li>
+                <h4>Data de Criação inicial</h4>
+                <p>{{ data.acervoItem.creationDate }}</p>
+              </li>
+              <li>
+                <h4>Legenda</h4>
+                <p>{{ data.acervoItem.legend }}</p>
+              </li>
+              <li>
+                <h4>Técnica</h4>
+                <p>{{ data.acervoItem.technique }}</p>
+              </li>
+              <li>
+                <h4>Material</h4>
+                <p>{{ data.acervoItem.material }}</p>
+              </li>
+              <li>
+                <h4>Digitalizado</h4>
+                <p>{{ data.acervoItem.digitalized }}</p>
+              </li>
+      
+              <li>
+                <h4>Autoria de quem reproduziu a digitalização</h4>
+                <p>{{ data.acervoItem.authorId }}</p>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <h4>Coleção</h4>
+                <p>{{ data.acervoItem.collectionId }}</p>
+              </li>
+              <li>
+                <h4>Doador</h4>
+                <p>{{ data.acervoItem.donor }}</p>
+              </li>
+              <li>
+                <h4>Histórico/contexto</h4>
+                <p>{{ data.acervoItem.contextHistory }}</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
