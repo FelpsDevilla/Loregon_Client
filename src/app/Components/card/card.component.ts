@@ -3,7 +3,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { AcervoItem } from '../../classes/acervo-item';
 import { MatDialog } from '@angular/material/dialog';
-import { SobreComponent } from '../../pages/sobre/sobre.component';
+import { SobreComponent } from '../../Components/sobre/sobre.component';
 
 @Component({
   selector: 'app-card',

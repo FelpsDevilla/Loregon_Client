@@ -1,0 +1,25 @@
+<nav>
+    <div class="padding">
+
+        <mat-form-field>
+          <mat-label>Input</mat-label>
+          <input matInput />
+        </mat-form-field>
+      
+        <mat-form-field>
+          <mat-label>Autor</mat-label>
+          <mat-select>
+            <mat-option value="one">Jujuba</mat-option>
+            <mat-option value="two">Second option</mat-option>
+          </mat-select>
+        </mat-form-field>
+    </div>
+
+  <mat-paginator
+    class="padding"
+    [length]="this.paginatorLenght"
+    hidePageSize="true"
+    aria-label="Select page"
+  >
+  </mat-paginator>
+</nav>

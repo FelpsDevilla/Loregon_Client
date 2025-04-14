@@ -3,11 +3,14 @@ import { CardComponent } from "../../Components/card/card.component";
 import { AcervoService } from '../../services/acervo.service';
 import { AcervoItem } from '../../classes/acervo-item';
 import { CommonModule } from '@angular/common';
+import { HeaderComponent } from "../../Components/header/header.component";
+import { FooterComponent } from "../../Components/footer/footer.component";
+import { FiltroComponent } from "../../Components/filtro/filtro.component";
 
 @Component({
   selector: 'app-acervo',
   standalone: true,
-  imports: [CardComponent, CommonModule],
+  imports: [CardComponent, CommonModule, HeaderComponent, FooterComponent, FiltroComponent],
   templateUrl: './acervo.component.html',
   styleUrl: './acervo.component.css'
 })

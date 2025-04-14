@@ -1,6 +1,5 @@
 .container-sobre {
     padding: 20px;
-    height: 100%;
   }
   
   .titulo{
@@ -23,11 +22,6 @@
     width: 100%;
     border-radius: 8px;
     border: 2px solid #ccc;
-  }
-  
-  .zoomable {
-    width: 100%;
-    z-index: 2000;
   }
   
   .metadados {
