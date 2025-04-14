@@ -1,0 +1,37 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo {
+    border: 1px solid;
+    border-radius: 5%;
+    height: 40vh;
+    width: 40vh;
+    background-color: var(--mat-sys-primary-container);
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.titulo{
+    margin: 0 auto;
+    margin-bottom: 5vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs{
+    margin: 0 2vh;
+}
+
+button{
+    margin: 0 2vh;
+}
