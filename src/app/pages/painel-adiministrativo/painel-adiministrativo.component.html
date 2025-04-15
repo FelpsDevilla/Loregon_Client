@@ -1,0 +1,17 @@
+<mat-sidenav-container class="example-container">
+
+  <mat-sidenav mode="side" opened>
+    <mat-toolbar color="primary">Painel Administrativo</mat-toolbar>
+    <a mat-button routerLink="usuarios">Usuários</a>
+    <a mat-button routerLink="postagens">Acervo</a>
+    <a mat-button routerLink="postagens">Biblioteca</a>
+    <a mat-button routerLink="postagens">Galeria</a>
+    <a mat-button routerLink="configuracoes">Sair</a>
+  </mat-sidenav>
+
+  <mat-sidenav-content> 
+    <p>teste</p>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

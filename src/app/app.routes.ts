@@ -6,6 +6,7 @@ import { ContatoComponent } from './pages/contato/contato.component';
 import { GaleriaComponent } from './pages/galeria/galeria.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
+import { PainelAdiministrativoComponent } from './pages/painel-adiministrativo/painel-adiministrativo.component';
 
 export const routes: Routes = [
     {
@@ -39,5 +40,9 @@ export const routes: Routes = [
       {
         path: "login",
         component: LoginComponent
+      },
+      {
+        path: "painel-administrativo",
+        component: PainelAdiministrativoComponent
       }
 ];
