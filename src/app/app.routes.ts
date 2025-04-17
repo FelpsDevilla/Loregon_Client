@@ -7,11 +7,16 @@ import { GaleriaComponent } from './pages/galeria/galeria.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
 import { PainelAdiministrativoComponent } from './pages/painel-adiministrativo/painel-adiministrativo.component';
+import { GerenciamentoUsuariosComponent } from './pages/pages-Painel-Adiministrativo/gerenciamento-usuarios/gerenciamento-usuarios.component';
+import { GerenciamentoAcervoComponent } from './pages/pages-Painel-Adiministrativo/gerenciamento-acervo/gerenciamento-acervo.component';
+import { GerenciamentoBibliotecaComponent } from './pages/pages-Painel-Adiministrativo/gerenciamento-biblioteca/gerenciamento-biblioteca.component';
+import { GerenciamentoGaleriaComponent } from './pages/pages-Painel-Adiministrativo/gerenciamento-galeria/gerenciamento-galeria.component';
 
 export const routes: Routes = [
     {
         path: "",
-        component: InicioComponent
+        redirectTo: "inicio",
+        pathMatch: "full"
       },
       {
         path: "inicio",
@@ -43,6 +48,13 @@ export const routes: Routes = [
       },
       {
         path: "painel-administrativo",
-        component: PainelAdiministrativoComponent
+        component: PainelAdiministrativoComponent,
+        children: [
+          {path: "usuarios", component: GerenciamentoUsuariosComponent},
+          {path: "acervo", component: GerenciamentoAcervoComponent},
+          {path: "biblioteca", component: GerenciamentoBibliotecaComponent},
+          {path: "galeria", component: GerenciamentoGaleriaComponent},
+          { path: '', redirectTo: 'usuarios', pathMatch: 'full' }
+        ]
       }
 ];

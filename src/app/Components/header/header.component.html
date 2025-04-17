@@ -4,13 +4,13 @@
     </div>
     <nav>
         <ul>
-            <li><button mat-button (click)="navegate('inicio')">Início</button></li>
-            <li><button mat-button (click)="navegate('sobre')">Sobre</button></li>
-            <li><button mat-button (click)="navegate('acervo')">Acervo</button></li>
-            <li><button mat-button (click)="navegate('galeria')">Galeria</button></li>
-            <li><button mat-button (click)="navegate('biblioteca')">Biblioteca</button></li>
-            <li><button mat-button (click)="navegate('contato')">Contato</button></li>
+            <li><button mat-button routerLink="/inicio">Início</button></li>
+            <li><button mat-button routerLink="/sobre">Sobre</button></li>
+            <li><button mat-button routerLink="/acervo">Acervo</button></li>
+            <li><button mat-button routerLink="/galeria">Galeria</button></li>
+            <li><button mat-button routerLink="/biblioteca">Biblioteca</button></li>
+            <li><button mat-button routerLink="/contato">Contato</button></li>
           </ul>
       </nav>
-      <button id="logar" mat-button (click)="navegate('login')">Logar</button>
+      <button id="logar" mat-button routerLink="/login">Logar</button>
   </header>
