@@ -3,3 +3,9 @@
     height: 80vh;
     background-color: blue;
 }
+
+mat-grid-tile {
+    background: lightblue;
+    padding: 0;
+    margin: 0;
+  }

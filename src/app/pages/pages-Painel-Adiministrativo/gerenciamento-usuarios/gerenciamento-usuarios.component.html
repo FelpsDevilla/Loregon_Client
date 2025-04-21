@@ -1,3 +1,17 @@
 <div class="box">
+  <mat-grid-list cols="5" rowHeight="5:1">
+    <mat-grid-tile>Email</mat-grid-tile>
+    <mat-grid-tile>cpf</mat-grid-tile>
+    <mat-grid-tile>Status</mat-grid-tile>
+    <mat-grid-tile>Editar</mat-grid-tile>
+    <mat-grid-tile>Excluir</mat-grid-tile>
 
+    @for (usuario of usuarios; track usuario.id) {
+    <mat-grid-tile>{{usuario.email}}</mat-grid-tile>
+    <mat-grid-tile>{{usuario.cpf}}</mat-grid-tile>
+    <mat-grid-tile>{{usuario.isActive}}</mat-grid-tile>
+    <mat-grid-tile>Editar</mat-grid-tile>
+    <mat-grid-tile>Excluir</mat-grid-tile>
+    }
+  </mat-grid-list>
 </div>
