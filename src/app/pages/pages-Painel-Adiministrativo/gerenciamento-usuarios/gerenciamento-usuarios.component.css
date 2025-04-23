@@ -1,7 +1,9 @@
 .box{
     width: 70vw;
     height: 80vh;
-    background-color: blue;
+    background-color: var(--mat-sys-primary-container);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 mat-grid-tile {
