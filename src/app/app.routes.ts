@@ -11,6 +11,10 @@ import { GerenciamentoUsuariosComponent } from './pages/pages-Painel-Adiministra
 import { GerenciamentoAcervoComponent } from './pages/pages-Painel-Adiministrativo/gerenciamento-acervo/gerenciamento-acervo.component';
 import { GerenciamentoBibliotecaComponent } from './pages/pages-Painel-Adiministrativo/gerenciamento-biblioteca/gerenciamento-biblioteca.component';
 import { GerenciamentoGaleriaComponent } from './pages/pages-Painel-Adiministrativo/gerenciamento-galeria/gerenciamento-galeria.component';
+import { EditarUsuarioComponent } from './Components/editar-usuario/editar-usuario.component';
+import { EditarItemAcervoComponent } from './Components/editar-item-acervo/editar-item-acervo.component';
+import { EditarLivroComponent } from './Components/editar-livro/editar-livro.component';
+import { EditarItemGaleriaComponent } from './Components/editar-item-galeria/editar-item-galeria.component';
 
 export const routes: Routes = [
     {
@@ -51,10 +55,14 @@ export const routes: Routes = [
         component: PainelAdiministrativoComponent,
         children: [
           {path: "usuarios", component: GerenciamentoUsuariosComponent},
+          {path: "usuarios/:id", component: EditarUsuarioComponent },
           {path: "acervo", component: GerenciamentoAcervoComponent},
+          {path: "acervo/:id", component: EditarItemAcervoComponent },
           {path: "biblioteca", component: GerenciamentoBibliotecaComponent},
+          {path: "biblioteca/:id", component: EditarLivroComponent },
           {path: "galeria", component: GerenciamentoGaleriaComponent},
-          { path: '', redirectTo: 'usuarios', pathMatch: 'full' }
+          {path: "galeria/:id", component: EditarItemGaleriaComponent },
+          {path: "", redirectTo: 'usuarios', pathMatch: 'full' }
         ]
       }
 ];
