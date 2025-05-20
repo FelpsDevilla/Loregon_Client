@@ -1,4 +1,6 @@
-# MvFront2
+<img src="https://raw.githubusercontent.com/FelpsDevilla/Loregon_Server/refs/heads/main/public/Logo.png" alt="MDN" width="200px"/>
+
+# Loregon Client
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
 
