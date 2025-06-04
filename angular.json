@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/mv-front2",
+            "outputPath": "dist/loregon_client",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "MvFront2:build:production"
+              "buildTarget": "loregon_client:build:production"
             },
             "development": {
-              "buildTarget": "MvFront2:build:development"
+              "buildTarget": "loregon_client:build:development"
             }
           },
           "defaultConfiguration": "development"
