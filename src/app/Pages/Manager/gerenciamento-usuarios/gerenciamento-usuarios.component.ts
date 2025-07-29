@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
-import { User } from '../../../classes/user';
-import { UserService } from '../../../services/user.service';
+import { User } from '../../../Classes/user';
+import { UserService } from '../../../Services/user.service';
 
 @Component({
   selector: 'app-gerenciamento-usuarios',

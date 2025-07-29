@@ -1,7 +1,7 @@
 import { Component, inject, Input } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-import { AcervoItem } from '../../classes/acervo-item';
+import { AcervoItem } from '../../Classes/Archive/acervo-item';
 import { MatDialog } from '@angular/material/dialog';
 import { SobreComponent } from '../../Components/sobre/sobre.component';
 

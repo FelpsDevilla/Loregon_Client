@@ -1,6 +1,6 @@
 import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { AcervoItem } from '../../classes/acervo-item';
+import { AcervoItem } from '../../Classes/Archive/acervo-item';
 
 @Component({
   selector: 'app-sobre',

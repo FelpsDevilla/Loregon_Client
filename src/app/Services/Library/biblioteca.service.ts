@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
-import { ApiService } from './api.service';
+import { ApiService } from './Api/api.service';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class AuthorService extends ApiService {
+export class BibliotecaService extends ApiService {
 
-  private endpoint: string = `${this.apiUrl}/authors`
+  private endpoint: string = `${this.apiUrl}/livraria`
 
   constructor(http: HttpClient) {
     super(http)

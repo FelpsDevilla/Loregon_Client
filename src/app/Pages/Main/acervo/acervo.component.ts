@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { CardComponent } from "../../Components/card/card.component";
-import { AcervoService } from '../../services/acervo.service';
-import { AcervoItem } from '../../classes/acervo-item';
+import { CardComponent } from "../../../Components/card/card.component";
+import { AcervoService } from '../../../Services/acervo.service';
+import { AcervoItem } from '../../../Classes/Archive/acervo-item';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from "../../Components/header/header.component";
-import { FooterComponent } from "../../Components/footer/footer.component";
-import { FiltroComponent } from "../../Components/filtro/filtro.component";
+import { HeaderComponent } from "../../../Components/header/header.component";
+import { FooterComponent } from "../../../Components/footer/footer.component";
+import { FiltroComponent } from "../../../Components/filtro/filtro.component";
 
 @Component({
   selector: 'app-acervo',
