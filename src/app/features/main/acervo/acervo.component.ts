@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CardComponent } from "../../../Components/card/card.component";
-import { AcervoService } from '../../../Services/acervo.service';
+import { AcervoService } from '../../../Services/Archive/archive.service';
 import { AcervoItem } from '../../../Classes/Archive/acervo-item';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from "../../../Components/header/header.component";

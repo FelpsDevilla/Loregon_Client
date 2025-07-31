@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { AcervoService } from './acervo.service';
+import { AcervoService } from './archive.service';
 
 describe('AcervoService', () => {
   let service: AcervoService;
