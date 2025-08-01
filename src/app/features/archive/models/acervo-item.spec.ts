@@ -1,4 +1,4 @@
-import { AcervoItem } from './acervo-item';
+import { AcervoItem } from '../../../shared/models/Archive/acervo-item';
 
 describe('AcervoItem', () => {
   it('should create an instance', () => {
