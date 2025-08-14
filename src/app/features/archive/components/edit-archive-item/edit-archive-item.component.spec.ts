@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EditarItemAcervoComponent } from './editar-item-acervo.component';
+import { EditArchiveItemComponent } from './edit-archive-item.component';
 
 describe('EditarItemAcervoComponent', () => {
-  let component: EditarItemAcervoComponent;
-  let fixture: ComponentFixture<EditarItemAcervoComponent>;
+  let component: EditArchiveItemComponent;
+  let fixture: ComponentFixture<EditArchiveItemComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [EditarItemAcervoComponent]
+      imports: [EditArchiveItemComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(EditarItemAcervoComponent);
+    fixture = TestBed.createComponent(EditArchiveItemComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

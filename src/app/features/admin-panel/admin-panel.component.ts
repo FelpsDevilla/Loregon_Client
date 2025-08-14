@@ -6,10 +6,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 
 @Component({
-  selector: 'app-painel-adiministrativo',
+  selector: 'app-admin-panel',
   imports: [MatSidenav, MatSidenavModule, RouterOutlet, MatToolbarModule, MatButtonModule, MatListModule, RouterLink],
-  templateUrl: './painel-adiministrativo.component.html',
-  styleUrl: './painel-adiministrativo.component.css'
+  templateUrl: './admin-panel.component.html',
+  styleUrl: './admin-panel.component.css'
 })
 export class PainelAdiministrativoComponent {
 

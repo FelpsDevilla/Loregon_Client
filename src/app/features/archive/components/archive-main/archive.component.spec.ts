@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AcervoComponent } from './acervo.component';
+import { ArchiveComponent } from './archive.component';
 
-describe('AcervoComponent', () => {
-  let component: AcervoComponent;
-  let fixture: ComponentFixture<AcervoComponent>;
+describe('ArchiveComponent', () => {
+  let component: ArchiveComponent;
+  let fixture: ComponentFixture<ArchiveComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AcervoComponent]
+      imports: [ArchiveComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AcervoComponent);
+    fixture = TestBed.createComponent(ArchiveComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

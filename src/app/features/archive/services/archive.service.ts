@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
-import { ApiService } from './api.service';
+import { ApiService } from '../../../core/services/api/api.service';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class AcervoService extends ApiService {
+export class ArchiveService extends ApiService {
 
   private endpoint: string = `${this.apiUrl}/acervo`
 

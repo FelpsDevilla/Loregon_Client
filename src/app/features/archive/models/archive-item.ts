@@ -1,4 +1,4 @@
-export class AcervoItem {
+export class ArchiveItem {
   id!: number;
   thumbnailUrl!: string;
   objectName!: string;

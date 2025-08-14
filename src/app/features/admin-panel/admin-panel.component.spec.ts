@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import {MatSidenavModule} from '@angular/material/sidenav';
-import { PainelAdiministrativoComponent } from './painel-adiministrativo.component';
+import { PainelAdiministrativoComponent } from './admin-panel.component';
 
 describe('PainelAdiministrativoComponent', () => {
   let component: PainelAdiministrativoComponent;
