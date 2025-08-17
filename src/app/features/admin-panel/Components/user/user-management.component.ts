@@ -1,28 +1,11 @@
 import { Component } from '@angular/core';
-import {MatGridListModule} from '@angular/material/grid-list';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
-import { User } from '../../../Classes/User/user';
-import { UserService } from '../../../Services/User/user.service';
 
 @Component({
-  selector: 'app-gerenciamento-usuarios',
-  imports: [MatGridListModule, MatIconModule, MatButtonModule],
-  templateUrl: './gerenciamento-usuarios.component.html',
-  styleUrl: './gerenciamento-usuarios.component.css'
+  selector: 'app-user-management',
+  imports: [],
+  templateUrl: './user-management.component.html',
+  styleUrl: './user-management.component.css'
 })
-export class GerenciamentoUsuariosComponent {
-  public usuarios: User[] = [];
+export class UserManagementComponent {
 
-    constructor(private userService: UserService) {
-    }
-  
-    ngOnInit(): void {
-      this.userService.getAllItens().subscribe({
-        next: (data) => {
-          this.usuarios = data
-        },
-        error: (err) => console.error('Erro ao carregar usuários', err)
-      })
-    }
 }

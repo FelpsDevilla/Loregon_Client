@@ -5,7 +5,7 @@ import { EditarUsuarioComponent } from "./Components/user/components/edit-user/e
 import { GerenciamentoAcervoComponent } from "./Components/archive/archive-management.component";
 import { EditarItemGaleriaComponent } from "./Components/gallery/components/edit-gallery-item/edit-gallery-item.component";
 import { GerenciamentoGaleriaComponent } from "./Components/gallery/gallery-management.component";
-import { EditarLivroComponent } from "./Components/library/components/edit-book/edit-book.component";
+import { EditarLivroComponent } from "./Components/library/components/edit-library/edit-library-item.component";
 import { GerenciamentoBibliotecaComponent } from "./Components/library/library-management.component";
 import { EditArchiveItemComponent } from "./Components/archive/components/edit-archive-item/edit-archive-item.component";
 

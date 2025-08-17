@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GerenciamentoBibliotecaComponent } from './gerenciamento-biblioteca.component';
+import { ManagementLibraryComponent } from './library-management.component';
 
-describe('GerenciamentoBibliotecaComponent', () => {
-  let component: GerenciamentoBibliotecaComponent;
-  let fixture: ComponentFixture<GerenciamentoBibliotecaComponent>;
+describe('ManagementLibraryComponent', () => {
+  let component: ManagementLibraryComponent;
+  let fixture: ComponentFixture<ManagementLibraryComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GerenciamentoBibliotecaComponent]
+      imports: [ManagementLibraryComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(GerenciamentoBibliotecaComponent);
+    fixture = TestBed.createComponent(ManagementLibraryComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

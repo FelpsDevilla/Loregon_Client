@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GerenciamentoGaleriaComponent } from './gerenciamento-galeria.component';
+import { GalleryManagementComponent } from './gallery-management.component';
 
-describe('GerenciamentoGaleriaComponent', () => {
-  let component: GerenciamentoGaleriaComponent;
-  let fixture: ComponentFixture<GerenciamentoGaleriaComponent>;
+describe('GalleryManagementComponent', () => {
+  let component: GalleryManagementComponent;
+  let fixture: ComponentFixture<GalleryManagementComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GerenciamentoGaleriaComponent]
+      imports: [GalleryManagementComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(GerenciamentoGaleriaComponent);
+    fixture = TestBed.createComponent(GalleryManagementComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

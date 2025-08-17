@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-gerenciamento-acervo',
+  selector: 'app-archive-management',
   imports: [],
-  templateUrl: './gerenciamento-acervo.component.html',
-  styleUrl: './gerenciamento-acervo.component.css'
+  templateUrl: './archive-management.component.html',
+  styleUrl: './archive-management.component.css'
 })
-export class GerenciamentoAcervoComponent {
+export class ArchiveManagementComponent {
 
 }

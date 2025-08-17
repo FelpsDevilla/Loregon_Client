@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GerenciamentoAcervoComponent } from './gerenciamento-acervo.component';
+import { ArchiveManagementComponent } from './archive-management.component';
 
-describe('GerenciamentoAcervoComponent', () => {
-  let component: GerenciamentoAcervoComponent;
-  let fixture: ComponentFixture<GerenciamentoAcervoComponent>;
+describe('ArchiveManagementComponent', () => {
+  let component: ArchiveManagementComponent;
+  let fixture: ComponentFixture<ArchiveManagementComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GerenciamentoAcervoComponent]
+      imports: [ArchiveManagementComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(GerenciamentoAcervoComponent);
+    fixture = TestBed.createComponent(ArchiveManagementComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

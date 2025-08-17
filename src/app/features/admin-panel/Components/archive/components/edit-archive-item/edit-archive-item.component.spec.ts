@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { EditArchiveItemComponent } from './edit-archive-item.component';
 
-describe('EditarItemAcervoComponent', () => {
+describe('EditArchiveItemComponent', () => {
   let component: EditArchiveItemComponent;
   let fixture: ComponentFixture<EditArchiveItemComponent>;
 

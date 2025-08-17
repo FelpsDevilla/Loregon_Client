@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: './edit-gallery-item.component.html',
   styleUrl: './edit-gallery-item.component.css'
 })
-export class EditarItemGaleriaComponent {
+export class EditGalleryItemComponent {
 
 }

@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-gerenciamento-biblioteca',
+  selector: 'app-library-management',
   imports: [],
-  templateUrl: './gerenciamento-biblioteca.component.html',
-  styleUrl: './gerenciamento-biblioteca.component.css'
+  templateUrl: './library-management.component.html',
+  styleUrl: './library-management.component.css'
 })
-export class GerenciamentoBibliotecaComponent {
+export class ManagementLibraryComponent {
 
 }

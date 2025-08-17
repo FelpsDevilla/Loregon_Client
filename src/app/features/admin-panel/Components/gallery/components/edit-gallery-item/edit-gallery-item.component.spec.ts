@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { EditarItemGaleriaComponent } from './edit-gallery-item.component';
+import { EditGalleryItemComponent } from './edit-gallery-item.component';
 
-describe('EditarItemGaleriaComponent', () => {
-  let component: EditarItemGaleriaComponent;
-  let fixture: ComponentFixture<EditarItemGaleriaComponent>;
+describe('GalleryManagementComponent', () => {
+  let component: EditGalleryItemComponent;
+  let fixture: ComponentFixture<EditGalleryItemComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [EditarItemGaleriaComponent]
+      imports: [EditGalleryItemComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(EditarItemGaleriaComponent);
+    fixture = TestBed.createComponent(EditGalleryItemComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

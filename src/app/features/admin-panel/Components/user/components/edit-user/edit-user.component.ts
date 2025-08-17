@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-editar-usuario',
+  selector: 'app-edit-user',
   imports: [],
-  templateUrl: './editar-usuario.component.html',
-  styleUrl: './editar-usuario.component.css'
+  templateUrl: './edit-user.component.html',
+  styleUrl: './edit-user.component.css'
 })
-export class EditarUsuarioComponent {
+export class EditUserComponent {
 
 }
