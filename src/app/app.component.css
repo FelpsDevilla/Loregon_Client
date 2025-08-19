@@ -1,5 +1,19 @@
 :host {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* 100% da viewport height */
+  width: 100vw; /* 100% da viewport width */
+}
+
+.layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  margin: 0 15vw;
+  height: 900vh;
+  flex: 1;
 }
