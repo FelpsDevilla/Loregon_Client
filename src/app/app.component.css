@@ -13,7 +13,5 @@
 }
 
 .content {
-  margin: 0 15vw;
-  height: 900vh;
   flex: 1;
 }

@@ -6,3 +6,7 @@ html, body {
   padding: 0;
   overflow-x: hidden; /* Impede rolagem horizontal */
 }
+
+.container {
+  margin: 0 15vw;
+}

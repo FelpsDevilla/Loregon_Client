@@ -10,11 +10,11 @@ import { LibraryComponent } from './library/library.component';
 export const MainPageRoutes: Routes = [
     {
         path: "",
-        redirectTo: "Home",
+        redirectTo: "home",
         pathMatch: "full"
       },
       {
-        path: "Home",
+        path: "home",
         component: HomeComponent
       },
       {
@@ -30,7 +30,7 @@ export const MainPageRoutes: Routes = [
         component: GalleryComponent
       },
       {
-        path: "biblioteca",
+        path: "library",
         component: LibraryComponent
       },
       {

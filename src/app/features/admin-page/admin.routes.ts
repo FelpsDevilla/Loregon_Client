@@ -1,5 +1,5 @@
 import { Routes } from "@angular/router";
-import { PainelAdiministrativoComponent } from "./admin-panel.component";
+import { PainelAdiministrativoComponent } from "./admin-page.component";
 import { UserManagementComponent } from "./Components/user/user-management.component";
 import { EditUserComponent } from "./Components/user/components/edit-user/edit-user.component";
 import { ArchiveManagementComponent } from "./Components/archive/archive-management.component";
@@ -9,9 +9,14 @@ import { EditLibraryItemComponent } from "./Components/library/components/edit-l
 import { ManagementLibraryComponent } from "./Components/library/library-management.component";
 import { EditArchiveItemComponent } from "./Components/archive/components/edit-archive-item/edit-archive-item.component";
 
-export const adminPanelRoutes: Routes = [
+export const adminPageRoutes: Routes = [
     {
-        path: "painel-administrativo",
+        path: "",
+        redirectTo: "pageAdmin",
+        pathMatch: "full"
+    },
+    {
+        path: "pageAdmin",
         component: PainelAdiministrativoComponent,
         children: [
             { path: "", redirectTo: 'users', pathMatch: 'full' },
