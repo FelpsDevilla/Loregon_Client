@@ -12,11 +12,11 @@ import { EditArchiveItemComponent } from "./Components/archive/components/edit-a
 export const adminPageRoutes: Routes = [
     {
         path: "",
-        redirectTo: "pageAdmin",
+        redirectTo: "adminPage",
         pathMatch: "full"
     },
     {
-        path: "pageAdmin",
+        path: "adminPage",
         component: PainelAdiministrativoComponent,
         children: [
             { path: "", redirectTo: 'users', pathMatch: 'full' },

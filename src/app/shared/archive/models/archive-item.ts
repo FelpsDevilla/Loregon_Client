@@ -1,7 +1,9 @@
-export class ArchiveItem {
+import { IBaseEntity } from "../../Interfaces/ibase-entity";
+
+export class ArchiveItem implements IBaseEntity {
   id!: number;
   thumbnailUrl!: string;
-  objectName!: string;
+  name!: string;
   creationDate!: Date;
   legend!: string;
   state!: string;
