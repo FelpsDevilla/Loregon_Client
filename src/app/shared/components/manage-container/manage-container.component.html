@@ -2,17 +2,18 @@
   <h2>{{ title }}</h2>
   <div class="table-container">
     <mat-form-field>
-      <mat-label>Filter</mat-label>
+      <mat-label>Filtrar</mat-label>
       <input
         matInput
         (keyup)="applyFilter($event)"
-        placeholder="Ex. Mia"
+        placeholder="Ex. Fotografia"
         #input
       />
     </mat-form-field>
 
-    <div class="mat-elevation-z8">
+    <div class="mat-elevation-z8 table">
       <table mat-table [dataSource]="dataSource" matSort>
+
         <!-- ID Column -->
         <ng-container matColumnDef="id">
           <th mat-header-cell *matHeaderCellDef mat-sort-header>ID</th>
@@ -21,26 +22,44 @@
 
         <!-- Name Column -->
         <ng-container matColumnDef="name">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header>Name</th>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Nome</th>
           <td mat-cell *matCellDef="let row">{{ row.name }}</td>
-        </ng-container>
-
-        <!-- Creation Date -->
-        <ng-container matColumnDef="creationDate">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header>Date</th>
-          <td mat-cell *matCellDef="let row">{{ row.creationDate }}</td>
         </ng-container>
 
         <!-- created -->
         <ng-container matColumnDef="created">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header>Create</th>
-          <td mat-cell *matCellDef="let row">{{ row.created }}</td>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Criado em</th>
+          <td mat-cell *matCellDef="let row">
+            {{ row.created.toDateString() }}
+          </td>
         </ng-container>
 
         <!-- updated -->
         <ng-container matColumnDef="updated">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header>Create</th>
-          <td mat-cell *matCellDef="let row">{{ row.updated }}</td>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>
+            Atualizado em
+          </th>
+          <td mat-cell *matCellDef="let row">
+            {{ row.updated.toDateString() }}
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="edit">
+          <th mat-header-cell *matHeaderCellDef></th>
+          <td mat-cell *matCellDef="let row">
+            <button matMiniFab>
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="delete">
+          <th mat-header-cell *matHeaderCellDef></th>
+          <td mat-cell *matCellDef="let row">
+            <button matMiniFab (click)="openDeleteDialog()">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
         </ng-container>
 
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
@@ -55,9 +74,12 @@
       </table>
 
       <mat-paginator
-        [pageSizeOptions]="[5, 10, 25, 100]"
+        [pageSizeOptions]="[10]"
         aria-label="Select page of users"
       ></mat-paginator>
     </div>
+    <button class="button-add" matButton="filled" color="secondary">
+      + Adiconar
+    </button>
   </div>
 </div>
