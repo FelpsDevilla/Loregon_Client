@@ -9,6 +9,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { DeleteItemComponent } from '../delete-item/delete-item.component';
+import { Router } from '@angular/router';
+import { I } from '@angular/cdk/keycodes';
 
 @Component({
   selector: 'app-manage-container',
@@ -18,9 +20,10 @@ import { DeleteItemComponent } from '../delete-item/delete-item.component';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ManageContainerComponent {
+  private router = inject(Router);
+
   @Input() title: string = 'Title';
   @Input() Items: IBaseEntity[] = [];
-
   @Input() editRoute: string = '';
   @Input() addRoute: string = '';
   @Input() deleteFunction: (id: number) => void = (id: number) => { };
@@ -38,6 +41,9 @@ export class ManageContainerComponent {
     });
   }
 
+  public editRouteFunction(id: number): void {
+    this.router.navigate([this.editRoute, id]);
+  }
 
   displayedColumns: string[] = ['id', 'name', 'created', 'updated', 'edit', 'delete'];
 
